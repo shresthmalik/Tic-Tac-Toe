@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Tic Tac Toe | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/TTT.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+  
+<style type="text/css">
+  body {font-color: "white"}
+  *{box-sizing: border-box;}
+  td{
+    border : 1px double cyan;
+  }
+  table{
+    border: 0px solid black;
+  }
+  th, td{
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>This landing page is created by <em>Shresth Malik</em></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="https://www.instagram.com/kalamkaar.shresth/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/@shresthmalik"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/shresthmalik"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/shresthmalik"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          Tic Tac Toe
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#play">1 Player Game</a></li>
+                          <li class="scroll-to-section"><a href="#play">2 Player Game</a></li>
+                          <li class="scroll-to-section"><a href="#top">High Score</a></li> 
+                          <li><a href="#" onclick="alert('These are the rules : '+'\n'+
+                                  '1. The game is played on a grid thats 3 squares by 3 squares.'+'\n'+
+                                  '2. You are X , your friend (or the computer) is O .'+'\n'+
+                                  '3. Players take turns putting their marks in empty squares.'+'\n'+
+                                  '4. The first player to get 3 of his/her marks in a row'+'\n'+
+                                  '(up, down, across, or diagonally) is the winner.'+'\n'+
+                                  '5. When all 9 squares are full, the game is over.'+'\n'+
+                                  'By now if no player has 3 marks in a row, the game ends in a tie.')">Rules</a></li>
+                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/game red.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+                <div class="caption">
+                  <h2>Welcome to The Game of Tic Tac Toe</h2>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="item">
+                        <h6>Hello Gamers</h6>
+                        <p>Rules are simple. Every 6th grader knows it.</p>
+                        <p>You need to make a streak of consecutive 3 marks to Win the game.<br>For more info, Click Rules</p><br>
+                        <font color="white">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th colspan="3">Buttons for Positions</th>
+                              </tr>
+                            </thead>
+                            <tr>
+                              <td width="200px">
+                                <font size="40">1</font><br><font size="2">Top left</font>
+                              </td>
+                              <td width="200px">
+                                <font size="40">2</font><br><font size="2">Top middle</font>
+                              </td>
+                              <td width="200px">
+                                <font size="40">3</font><br><font size="2">Top right</font>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><font size="40">4</font><br><font size="2">Middle left</font></td>
+                              <td><font size="40">5</font><br><font size="2">Center</font></td>
+                              <td><font size="40">6</font><br><font size="2">Middle right</font></td>
+                            </tr>
+                            <tr>
+                              <td><font size="40">7</font><br><font size="2">Bottom left</font></td>
+                              <td><font size="40">8</font><br><font size="2">Bottom middle</font></td>
+                              <td><font size="40">9</font><br><font size="2">Bottom right</font></td>
+                            </tr>
+                          </table>
+                        </font>
+                      </div>
+                    </div>
+                  
+
+                    <div class="col-lg-3">
+                      <div class="row"><h3 align="center"><font color="white"><br><br>Playing Board<br><br></font></h3>
+                      </div>
+                      <div class="row">
+                        <img src="assets/images/tic.jpg">
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="item">
+                        <h4 align="center"><font color="white"><br><br>Leaderboard</h4><br>
+                        <center>
+                          <table>
+                          <tr>
+                            <th width="100px" align="center">Rank</th>
+                            <th width="200px" align="center">Warrior</th>
+                            <th width="200px" align="center">Wins</th>
+                            <th>
+                          </tr>
+                          <tr>
+                            <td>1</td><td>Fischer</td><td>49</td>
+                          </tr>
+                          <tr><td>2</td><td>Magnus</td><td>27</td></tr>
+                          <tr><td>3</td><td>Bale</td><td>18</td></tr>
+                          <tr><td>4</td><td>Benzema</td><td>13</td></tr>
+                          <tr><td>5</td><td>Modric</td><td>10</td></tr>
+                          <tr><td>6</td><td>Casemiro</td><td>6</td></tr>
+                          <tr><td>7</td><td>Kroos</td><td>6</td></tr>
+                          <tr><td>8</td><td>Ramos</td><td>4</td></tr>
+                          <tr><td>9</td><td>Pepe</td><td>3</td></tr>
+                          <tr><td>10</td><td>Carvajal</td><td>1</td></tr>
+                          <tr><td>11</td><td>Marcelo</td><td>1</td></tr>
+                          <tr><td>12</td><td>Courtois</td><td>1</td></tr>
+                        </table>
+                      </center>
+                      </div>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </font>
+  </section>
+
+  <!-- ***** Start the Play ***** -->
+
+  <section class="play-now" id="play">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h1 align="center" color="white">Are you ready to begin</h1><br><br>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="categories">
+            <div class="category-heading">
+              <h3>1 Player Game</h3>
+              <h5>(vs computer)</h5>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-5">Player X's Name --> </div>
+                <div class="col-lg-6">
+                    <input name="player1" type="text" id="player1" placeholder="Enter Name..." required="">
+                </div>
+                <div class="col-lg-1"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-5">Select Difficulty Level</div>
+                <div class="col-lg-7">
+                  <form>
+                  <div class="row">
+                    
+                    <div class="col-lg-1"><input type="radio" id="easy" name="Difficulty" value="easy"></div>
+                    <div class="col-lg-5">Easy</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-1"><input type="radio" id="medium" name="Difficulty" value="medium"></div>
+                    <div class="col-lg-5">Medium</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-1"><input type="radio" id="hard" name="Difficulty" value="hard"></div>
+                    <div class="col-lg-5">Hard</div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+              
+            <div class="main-button-red">
+              <a href="" onclick="post">Start</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="categories">
+            <div class="category-heading">
+              <h4>2 Player Game</h4>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-5">Player X's Name --> </div>
+                <div class="col-lg-6">
+                    <input name="player1" type="text" id="player1" placeholder="Enter Name..." required="">
+                </div>
+                <div class="col-lg-1"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-5">Player O's Name --> </div>
+                <div class="col-lg-6">
+                    <input name="player2" type="text" id="player2" placeholder="Enter Name..." required="">
+                </div>
+                <div class="col-lg-1"></div>
+              </div>
+            </div>
+            <div class="main-button-red">
+              <a href="">Start</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts -->
+  <section class="facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2><font color="white">A Few Facts About the Game</font></h2>
+              <p><font color="white" face="Bahnschrift">
+                Tic Tac Toe can be traced back to ancient Egypt where it was played dating from around 1300BC. An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called <I>terni lapilli</I> (three pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing. The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also played on a simple grid and requires three pieces in a row to finish, and Picaria, a game of the Puebloans.
+              </font>
+              </p>
+            </basefont>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">138</div>
+                    <div class="count-title">Terminal Board Position</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">91</div>
+                    <div class="count-title">Positions Won by X</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content years-old">
+                    <div class="count-digit">2400</div>
+                    <div class="count-title">Years Old Game</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">44</div>
+                    <div class="count-title">Positions Won by O</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <h4 align="center"><font color="white">Tutorial Video for Complete Beginners</font></h4><br>
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=3qzcAMShotQ&ab_channel=wikiHow" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h2><font color="white">So! How did you like my landing page?</font></h2>
+              </div>
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Please leave a feedback.</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="phoneno" type="text" id="phoneno" placeholder="YOUR PHONE NO..." required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                  <p>Kindly Rate Us (on scale of 5)</p>
+                    <form>
+                      <input type="radio" id="rate1" name="rate" value="1">
+                      <input type="radio" id="rate2" name="rate" value="2">
+                      <input type="radio" id="rate3" name="rate" value="3">
+                      <input type="radio" id="rate4" name="rate" value="4">
+                      <input type="radio" id="rate5" name="rate" value="5">
+                    </form>  
+                  </div>
+                  
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>888-92-92-088</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>shresthmalik.official@gmail.com</span>
+              </li>
+              <li>
+                <h6>Institute Address</h6>
+                <span>NIT Raipur, GE Road, Raipur, Chhattisgarh</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.notyetlaunchedlol.in</span>
+              </li>
+              <li>
+                <h6>Creator's Handles</h6>
+                <span>
+                  <h4>
+                    <a href="https://www.linkedin.com/in/shresthmalik"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/shresthmalik"><i class="fa fa-github"></i></a>
+                    <a href="https://www.instagram.com/kalamkaar.shresth/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@shresthmalik"><i class="fa fa-youtube"></i></a>
+                    <a href="https://twitter.com/shresthmalik"><i class="fa fa-twitter"></i></a>
+                    
+                  </h4>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="main-button-yellow">
+              <br><br><center><a href="#top">Back to Top</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>It was nice being of use to you. We hope to see you again ;-)</p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
