@@ -1407,23 +1407,6 @@ section.meetings-page .pagination ul li a:hover {
   color: #f5a425;
 }
 
-/* Meeting item column */
-.templatemo-item-col {
-	width: 31%;
-}
-
-@media (max-width: 992px) {
-	.templatemo-item-col {
-		width: 45%;
-	}
-}
-
-@media (max-width: 767px) {
-	.templatemo-item-col {
-		width: 100%;
-	}
-}
-
 /* 
 ---------------------------------------------
 responsive
